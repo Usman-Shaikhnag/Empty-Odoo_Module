@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+     <record id="project_template_wizard_form" model="ir.ui.view">
+        <field name="name">project.template.report.wizard</field>
+        <field name="model">project.template.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Template">
+                <group>
+                    <field name="selection"/>
+                    <field name="project_name"/> 
+                </group>
+                <footer>
+                    <button name="create_project_template" string="Create" class="btn-primary" type="object"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+        
+                </footer>
+            </form>
+        </field>
+
+     </record>
+     <record id="project_template_wizard" model="ir.actions.act_window">
+        <field name="name">Project Template</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">project.template.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="project_template_wizard_form"/>
+        <field name="target">new</field>
+
+        
+
+     </record>
+     <menuitem 
+        id="project_template_report_print"
+        name="Project Template"
+        parent="project.menu_main_pm"
+        action="template-project.project_template_wizard"
+     />
+</odoo>
