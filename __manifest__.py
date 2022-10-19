@@ -1,4 +1,4 @@
-{'name':'Project Template',
+{'name':'EXIM_EXPORTS',
  'summary': "EXIM_EXPORTS",
  'author': "Usman Shaikhnag", 
  'website': "http://www.esehat.org", 
