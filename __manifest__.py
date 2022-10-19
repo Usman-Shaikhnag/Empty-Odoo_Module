@@ -1,9 +1,9 @@
 {'name':'Project Template',
- 'summary': "Project Template",
+ 'summary': "EXIM_EXPORTS",
  'author': "Usman Shaikhnag", 
  'website': "http://www.esehat.org", 
  'category': 'Uncategorized', 
  'version': '13.0.1', 
  'depends':['base' , 'contacts'],
- 'data': ['wizard/template_wizard.xml']
+ 'data': ['views/views.xml']
 }
