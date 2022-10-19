@@ -1,1 +1,1 @@
-# LERM-lite-odoo
+# Empty Odoo Module
